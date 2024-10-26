@@ -34,7 +34,7 @@ jobs:
         uses: ./
 
   notify:
-    name: notify
+    name: Slack Notification
     needs: [test-action, pre-commit]
     runs-on: ubuntu-latest
     if: always()
