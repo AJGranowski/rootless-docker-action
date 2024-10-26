@@ -19,7 +19,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Run pre-commit hooks.
-        uses: ScribeMD/pre-commit-action@832e026101148e0234fde20eecf91c08942ace4a # 0.9.127
+        uses: ScribeMD/pre-commit-action@bc61f671d0d1d526256c65f486e1f0a49da5f572 # 0.9.129
 
   test-action:
     name: Test Action
