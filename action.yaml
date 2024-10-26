@@ -44,8 +44,10 @@ runs:
         cat <<EOF > ~/${filename}
         abi <abi/${ABI4_VERSION}>,
         include <tunables/global>
+
         "$HOME/bin/rootlesskit" flags=(unconfined) {
           userns,
+
           include if exists <local/${filename}>
         }
         EOF
