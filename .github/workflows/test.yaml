@@ -36,7 +36,7 @@ jobs:
 
   notify:
     name: Slack Notification
-    needs: [test-action, pre-commit]
+    needs: [pre-commit, test-action]
     runs-on: ubuntu-latest
     if: always()
     steps:
