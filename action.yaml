@@ -32,7 +32,6 @@ runs:
       id: apparmor
       run: |
         abi4_version="$(find /etc/apparmor.d/abi -maxdepth 1 -name '4.*' -printf '%f\n' | sort -nr | head -1)"
-        echo "$abi4_version"
         echo "ABI4_VERSION=$abi4_version" >>"$GITHUB_OUTPUT"
       shell: bash
     - name: Configure AppArmor
